@@ -1,42 +1,61 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.App {
+  margin: auto;
+  padding: 0;
+  /* width: 34.375rem; */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.header {
+  display: flex;
+  /* height: 4.06rem; */
+  padding: 1.25rem;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  color: #fff;
+  align-items: center;
+  width: inherit;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.header--img {
+  width: 2.81rem;
+  /* height: 100%; */
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.header h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  /* linespacing: -0.1em; */
+  margin-right: auto;
+  margin-left: 0.44rem;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.header p {
+  font-size: 0.75rem;
+  font-weight: 500;
 }
 
-.card {
-  padding: 2em;
+
+main {
+  padding: 36px;
 }
 
-.read-the-docs {
-  color: #888;
+.form {
+  display: grid;
+  grid-template: 40px 40px/ 1fr 1fr;
+  gap: 17px;
+}
+.form--input{
+  font-family: "Karla", sans-serif;
+  padding: 10px 11px;
+  border: 1px solid #D5D4D8;
+  border-radius: 5px;
+}
+.form--input:focus{
+  border:2px solid #672280;
+}
+.form--button {
+  grid-column: 1 / -1;
+  background: linear-gradient(90deg, #711F8D 1.14%, #A818DA 100%);
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
 }

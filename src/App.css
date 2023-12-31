@@ -39,7 +39,7 @@ main {
 
 .form {
   display: grid;
-  grid-template: 40px 40px/ 1fr 1fr;
+  grid-template: 40px 40px auto/ 1fr 1fr;
   gap: 17px;
 }
 .form--input{
@@ -58,4 +58,14 @@ main {
   border: none;
   color: #fff;
   cursor: pointer;
+}
+
+.meme--image{
+  grid-column: 1 / -1;
+  margin: auto;
+  max-width: 100%;
+  border: 2px groove #711F8D;
+  border-radius: 5px;
+  box-shadow: 3px 3px 4px rgba(140, 0, 255, 0.473),
+              -3px -3px 4px rgba(33, 0, 48, 0.466);
 }
